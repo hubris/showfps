@@ -1,0 +1,10 @@
+Build:
+cmake .
+make
+make install
+
+Usage:
+LD_PRELOAD=libglfps.so glxgears
+
+Set GLFPS_FONT to the path of a font compatible with freetype. Example: 
+export GLFPS_FONT=/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf
