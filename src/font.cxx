@@ -30,6 +30,7 @@ FontGL::FontGL(const char *filename, int pixelSize, int textureSize)
   if(error) {
     std::string mess("FontGL: Can't load font face for ");
     std::cerr << mess << filename << std::endl;
+    std::cerr << "Set the GLFPS_FONT environement variable to a true type font on your system" << std::endl;
   }
 
   //Set char size
