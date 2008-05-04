@@ -3,6 +3,7 @@
 #include "timer.h"
 #include "font.h"
 #include "LibraryLoader.h"
+#include "config.h"
 
 #include <map>
 #include <iostream>
@@ -18,7 +19,7 @@ static std::map<GLXContext, float> g_fps;
 
 static FontGL* g_font = NULL;
 
-#define DEFAULTFONT "/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf"
+#define DEFAULTFONT DATA_PATH"/DejaVuSansMono-Bold.ttf"
 
 void
 __attribute__ ((constructor)) sharedLibInit()
