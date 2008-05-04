@@ -1,5 +1,5 @@
 Build:
-cmake .
+ccmake . (or cmake .)
 make
 make install
 
